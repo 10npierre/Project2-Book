@@ -25,93 +25,21 @@ class Book
     {
         author = bookAuthor;
         title = bookTitle;
-        yearPublished = published;
-        condition = bookCondition;
-        price = bookPrice;
-        genre = bookGenre;
-        id = bookID;
+        
     }
 
     // Add the methods here ...
-    public void setBookTitle(String BTitle)
+    
+    public void printAuthor()
     {
-        title = BTitle;
+        System.out.println("Author of the book is: " +author);
     }
     
-    public void setBookAuthor(String BAuthor)
+    public void printTitle()
     {
-        author = BAuthor;
+        System.out.println("Title of the book is: " +title);
     }
     
-    public void setYearPublished(int pub)
-    {
-        yearPublished = pub;
-    }
     
-    public void setBookCondtion (String con)
-    {
-        condition = con;
-    }
     
-    public void setBookPrice(int number)
-    {
-        price = number;
-    }
-    
-    public void setBookGenre(String gen)
-    {
-        genre = gen;
-    }
-    
-    public void setBookID(int bID)
-    {
-        id = bID;
-    }
-    
-    public String getAuthor()
-    {
-        return author;
-    }
-    
-    public String getTitle()
-    {
-        return title;
-    }
-    
-    public int getYearPublished()
-    {
-        return yearPublished;
-    }
-    
-    public String getBookCondtion()
-    {
-        return condition;
-    }
-    
-    public int getBookPrice()
-    {
-        return price;
-    }
-    
-    public String getBookGenre()
-    {
-        return genre;
-    }
-    
-    public int getBookID()
-    {
-        return id;
-    }
-    
-    public void PrintDetails()
-    {
-        System.out.println("The title of the book is: " +title);
-        System.out.println("The author of the book is: " +author);
-        System.out.println("Year it was published: " +yearPublished);
-        System.out.println("Condition of book: " +condition);
-        System.out.println("The book cost: " +price);
-        System.out.println("Genre of the book is: " +genre);
-        System.out.println("ID of the book: " +id);
-
-    }
 }
