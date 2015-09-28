@@ -42,6 +42,10 @@ class Book
         return pages;
     }
     
-    
-    
+    public void printDetails()
+    {
+        System.out.println("Author of book: " +author);
+        System.out.println("Title of book: " +title);
+        System.out.println("Number of pages: " +pages);
+    }
 }
