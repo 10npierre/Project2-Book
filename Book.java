@@ -12,16 +12,18 @@ class Book
     private String author;
     private String title;
     private int yearPublished;
+    private String condition;
 
     /**
      * Set the author and title fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle, int published)
+    public Book(String bookAuthor, String bookTitle, int published, String bookCondition)
     {
         author = bookAuthor;
         title = bookTitle;
         yearPublished = published;
+        condition = bookCondition;
     }
 
     // Add the methods here ...
@@ -38,6 +40,11 @@ class Book
     public int getYearPublished()
     {
         return yearPublished;
+    }
+    
+    public String getBookCondtion()
+    {
+        return condition;
     }
     
     public void PrintBook()
