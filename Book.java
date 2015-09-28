@@ -14,18 +14,20 @@ class Book
     private int yearPublished;
     private String condition;
     private int price;
+    private String genre;
 
     /**
      * Set the author and title fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle, int published, String bookCondition, int bookPrice)
+    public Book(String bookAuthor, String bookTitle, int published, String bookCondition, int bookPrice, String bookGenre)
     {
         author = bookAuthor;
         title = bookTitle;
         yearPublished = published;
         condition = bookCondition;
         price = bookPrice;
+        genre = bookGenre;
     }
 
     // Add the methods here ...
@@ -54,6 +56,11 @@ class Book
         price = number;
     }
     
+    public void setBookGenre(String gen)
+    {
+        genre = gen;
+    }
+    
     public String getAuthor()
     {
         return author;
@@ -79,6 +86,11 @@ class Book
         return price;
     }
     
+    public String getBookGenre()
+    {
+        return genre;
+    }
+    
     public void PrintDetails()
     {
         System.out.println("The title of the book is: " +title);
@@ -86,5 +98,6 @@ class Book
         System.out.println("Year it was published: " +yearPublished);
         System.out.println("Condition of book: " +condition);
         System.out.println("The book cost: " +price);
+        System.out.println("Genre of the book is: " +genre);
     }
 }
