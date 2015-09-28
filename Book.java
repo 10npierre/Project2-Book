@@ -11,15 +11,17 @@ class Book
     // The fields.
     private String author;
     private String title;
+    private int yearPublished;
 
     /**
      * Set the author and title fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle)
+    public Book(String bookAuthor, String bookTitle, int published)
     {
         author = bookAuthor;
         title = bookTitle;
+        yearPublished = published;
     }
 
     // Add the methods here ...
@@ -31,5 +33,10 @@ class Book
     public String getTitle()
     {
         return title;
+    }
+    
+    public int getYearPublished()
+    {
+        return yearPublished;
     }
 }
