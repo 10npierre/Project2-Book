@@ -47,10 +47,11 @@ class Book
         return condition;
     }
     
-    public void PrintBook()
+    public void PrintDetails()
     {
         System.out.println("The title of the book is: " +title);
         System.out.println("The author of the book is: " +author);
         System.out.println("Year it was published: " +yearPublished);
+        System.out.println("Condition of book: " +condition);
     }
 }
